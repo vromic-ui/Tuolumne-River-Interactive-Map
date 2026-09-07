@@ -581,40 +581,6 @@
 });
                      
     
-    geo_json_4037f038cd8b137aac71cb42c3814cf6.bindPopup(
-    function(layer){
-    let div = L.DomUtil.create('div');
-    
-    let handleObject = feature => {
-        if (feature === null) {
-            return '';
-        } else if (typeof(feature)=='object') {
-            return JSON.stringify(feature);
-        } else {
-            return feature;
-        }
-    }
-    let fields = ["segment", "reach", "grade", "score"];
-    let aliases = ["Section:", "Reach:", "River Health Grade:", "Composite Score:"];
-    let table = '<table>' +
-        String(
-        fields.map(
-        (v,i)=>
-        `<tr>
-            <th>${aliases[i].toLocaleString()}</th>
-            
-            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
-        </tr>`).join(''))
-    +'</table>';
-    div.innerHTML=table;
-    
-    return div
-    }
-    ,{
-  "className": "foliumpopup",
-});
-                     
-    
             geo_json_4037f038cd8b137aac71cb42c3814cf6.addTo(map_c78fb8f91e7fb8448513495c550c72d4);
         
     
@@ -693,40 +659,6 @@
     ,{
   "sticky": true,
   "className": "foliumtooltip",
-});
-                     
-    
-    geo_json_7a9407fccc07bd9d963e4bc98accf3b4.bindPopup(
-    function(layer){
-    let div = L.DomUtil.create('div');
-    
-    let handleObject = feature => {
-        if (feature === null) {
-            return '';
-        } else if (typeof(feature)=='object') {
-            return JSON.stringify(feature);
-        } else {
-            return feature;
-        }
-    }
-    let fields = ["segment", "reach", "grade", "score"];
-    let aliases = ["Section:", "Reach:", "River Health Grade:", "Composite Score:"];
-    let table = '<table>' +
-        String(
-        fields.map(
-        (v,i)=>
-        `<tr>
-            <th>${aliases[i].toLocaleString()}</th>
-            
-            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
-        </tr>`).join(''))
-    +'</table>';
-    div.innerHTML=table;
-    
-    return div
-    }
-    ,{
-  "className": "foliumpopup",
 });
                      
     
@@ -809,42 +741,6 @@
   "sticky": true,
   "className": "foliumtooltip",
 });
-                     
-    
-    geo_json_395da3a97278b7923d487f02a8ab4f3a.bindPopup(
-    function(layer){
-    let div = L.DomUtil.create('div');
-    
-    let handleObject = feature => {
-        if (feature === null) {
-            return '';
-        } else if (typeof(feature)=='object') {
-            return JSON.stringify(feature);
-        } else {
-            return feature;
-        }
-    }
-    let fields = ["segment", "reach", "grade", "score"];
-    let aliases = ["Section:", "Reach:", "River Health Grade:", "Composite Score:"];
-    let table = '<table>' +
-        String(
-        fields.map(
-        (v,i)=>
-        `<tr>
-            <th>${aliases[i].toLocaleString()}</th>
-            
-            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
-        </tr>`).join(''))
-    +'</table>';
-    div.innerHTML=table;
-    
-    return div
-    }
-    ,{
-  "className": "foliumpopup",
-});
-                     
-    
             geo_json_395da3a97278b7923d487f02a8ab4f3a.addTo(map_c78fb8f91e7fb8448513495c550c72d4);
         
     
@@ -924,42 +820,6 @@
   "sticky": true,
   "className": "foliumtooltip",
 });
-                     
-    
-    geo_json_c64b4372c8885626e7ebcb76dd151f1f.bindPopup(
-    function(layer){
-    let div = L.DomUtil.create('div');
-    
-    let handleObject = feature => {
-        if (feature === null) {
-            return '';
-        } else if (typeof(feature)=='object') {
-            return JSON.stringify(feature);
-        } else {
-            return feature;
-        }
-    }
-    let fields = ["segment", "reach", "grade", "score"];
-    let aliases = ["Section:", "Reach:", "River Health Grade:", "Composite Score:"];
-    let table = '<table>' +
-        String(
-        fields.map(
-        (v,i)=>
-        `<tr>
-            <th>${aliases[i].toLocaleString()}</th>
-            
-            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
-        </tr>`).join(''))
-    +'</table>';
-    div.innerHTML=table;
-    
-    return div
-    }
-    ,{
-  "className": "foliumpopup",
-});
-                     
-    
             geo_json_c64b4372c8885626e7ebcb76dd151f1f.addTo(map_c78fb8f91e7fb8448513495c550c72d4);
         
     
@@ -1039,42 +899,6 @@
   "sticky": true,
   "className": "foliumtooltip",
 });
-                     
-    
-    geo_json_89dfe5162fc3f79f9abaa9f06879063b.bindPopup(
-    function(layer){
-    let div = L.DomUtil.create('div');
-    
-    let handleObject = feature => {
-        if (feature === null) {
-            return '';
-        } else if (typeof(feature)=='object') {
-            return JSON.stringify(feature);
-        } else {
-            return feature;
-        }
-    }
-    let fields = ["segment", "reach", "grade", "score"];
-    let aliases = ["Section:", "Reach:", "River Health Grade:", "Composite Score:"];
-    let table = '<table>' +
-        String(
-        fields.map(
-        (v,i)=>
-        `<tr>
-            <th>${aliases[i].toLocaleString()}</th>
-            
-            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
-        </tr>`).join(''))
-    +'</table>';
-    div.innerHTML=table;
-    
-    return div
-    }
-    ,{
-  "className": "foliumpopup",
-});
-                     
-    
             geo_json_89dfe5162fc3f79f9abaa9f06879063b.addTo(map_c78fb8f91e7fb8448513495c550c72d4);
         
     
