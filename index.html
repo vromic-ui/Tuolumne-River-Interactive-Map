@@ -25,7 +25,12 @@
                     top: 0.0%;
                 }
                 .leaflet-container { font-size: 1rem; }
-            </style>
+        .grade-circle-tooltip {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+    </style>
 
             <style>html, body {
                 width: 100%;
@@ -506,10 +511,25 @@
         }
 
         function geo_json_4037f038cd8b137aac71cb42c3814cf6_onEachFeature(feature, layer) {
-
-            layer.on({
-            });
-        };
+    layer.bindTooltip(
+        `<div style="text-align: center;">
+            <img src="DosRiosModesto_Transparent.png" style="width: 170px; height: auto; display: block;" />
+         </div>`, 
+        { 
+            sticky: true, 
+            direction: 'auto', 
+            className: 'grade-circle-tooltip' 
+        }
+    );
+    layer.on({
+        mouseover: function(e) {
+            e.target.setStyle({ weight: 5, fillOpacity: 0.8 });
+        },
+        mouseout: function(e) {
+            geo_json_4037f038cd8b137aac71cb42c3814cf6.resetStyle(e.target);
+        }
+    });
+}
         var geo_json_4037f038cd8b137aac71cb42c3814cf6 = L.geoJson(null, {
                 onEachFeature: geo_json_4037f038cd8b137aac71cb42c3814cf6_onEachFeature,
             
@@ -606,10 +626,25 @@
         }
 
         function geo_json_7a9407fccc07bd9d963e4bc98accf3b4_onEachFeature(feature, layer) {
-
-            layer.on({
-            });
-        };
+    layer.bindTooltip(
+        `<div style="text-align: center;">
+            <img src="EmpireHickmanTransparent.png" style="width: 170px; height: auto; display: block;" />
+         </div>`, 
+        { 
+            sticky: true, 
+            direction: 'auto', 
+            className: 'grade-circle-tooltip' 
+        }
+    );
+    layer.on({
+        mouseover: function(e) {
+            e.target.setStyle({ weight: 5, fillOpacity: 0.8 });
+        },
+        mouseout: function(e) {
+            geo_json_7a9407fccc07bd9d963e4bc98accf3b4.resetStyle(e.target);
+        }
+    });
+}
         var geo_json_7a9407fccc07bd9d963e4bc98accf3b4 = L.geoJson(null, {
                 onEachFeature: geo_json_7a9407fccc07bd9d963e4bc98accf3b4_onEachFeature,
             
@@ -705,11 +740,26 @@
             }
         }
 
-        function geo_json_395da3a97278b7923d487f02a8ab4f3a_onEachFeature(feature, layer) {
-
-            layer.on({
-            });
-        };
+      function geo_json_395da3a97278b7923d487f02a8ab4f3a_onEachFeature(feature, layer) {
+    layer.bindTooltip(
+        `<div style="text-align: center;">
+            <img src="HickmanLaGrangeTransparent.png" style="width: 170px; height: auto; display: block;" />
+         </div>`, 
+        { 
+            sticky: true, 
+            direction: 'auto', 
+            className: 'grade-circle-tooltip' 
+        }
+    );
+    layer.on({
+        mouseover: function(e) {
+            e.target.setStyle({ weight: 5, fillOpacity: 0.8 });
+        },
+        mouseout: function(e) {
+            geo_json_395da3a97278b7923d487f02a8ab4f3a.resetStyle(e.target);
+        }
+    });
+}
         var geo_json_395da3a97278b7923d487f02a8ab4f3a = L.geoJson(null, {
                 onEachFeature: geo_json_395da3a97278b7923d487f02a8ab4f3a_onEachFeature,
             
@@ -805,11 +855,26 @@
             }
         }
 
-        function geo_json_c64b4372c8885626e7ebcb76dd151f1f_onEachFeature(feature, layer) {
-
-            layer.on({
-            });
-        };
+      function geo_json_c64b4372c8885626e7ebcb76dd151f1f_onEachFeature(feature, layer) {
+    layer.bindTooltip(
+        `<div style="text-align: center;">
+            <img src="LaGrangeDonPedro_Transparent.png" style="width: 170px; height: auto; display: block;" />
+         </div>`, 
+        { 
+            sticky: true, 
+            direction: 'auto', 
+            className: 'grade-circle-tooltip' 
+        }
+    );
+    layer.on({
+        mouseover: function(e) {
+            e.target.setStyle({ weight: 5, fillOpacity: 0.8 });
+        },
+        mouseout: function(e) {
+            geo_json_c64b4372c8885626e7ebcb76dd151f1f.resetStyle(e.target);
+        }
+    });
+}
         var geo_json_c64b4372c8885626e7ebcb76dd151f1f = L.geoJson(null, {
                 onEachFeature: geo_json_c64b4372c8885626e7ebcb76dd151f1f_onEachFeature,
             
@@ -905,11 +970,26 @@
             }
         }
 
-        function geo_json_89dfe5162fc3f79f9abaa9f06879063b_onEachFeature(feature, layer) {
-
-            layer.on({
-            });
-        };
+       function geo_json_89dfe5162fc3f79f9abaa9f06879063b_onEachFeature(feature, layer) {
+    layer.bindTooltip(
+        `<div style="text-align: center;">
+            <img src="ModestoEmpire_Transparent.png" style="width: 170px; height: auto; display: block;" />
+         </div>`, 
+        { 
+            sticky: true, 
+            direction: 'auto', 
+            className: 'grade-circle-tooltip' 
+        }
+    );
+    layer.on({
+        mouseover: function(e) {
+            e.target.setStyle({ weight: 5, fillOpacity: 0.8 });
+        },
+        mouseout: function(e) {
+            geo_json_89dfe5162fc3f79f9abaa9f06879063b.resetStyle(e.target);
+        }
+    });
+}
         var geo_json_89dfe5162fc3f79f9abaa9f06879063b = L.geoJson(null, {
                 onEachFeature: geo_json_89dfe5162fc3f79f9abaa9f06879063b_onEachFeature,
             
