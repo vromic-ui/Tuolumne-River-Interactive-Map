@@ -851,7 +851,12 @@
             return {"color": "#4e342e", "fillColor": "#6d4c41", "fillOpacity": 0.5, "weight": 0.75};
     }
 }
-
+        function geo_json_95ef52839e598b7532dc117a397cb7fd_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#4e342e", "fillColor": "#6d4c41", "fillOpacity": 0.5, "weight": 0.75};
+            }
+        }
         function geo_json_95ef52839e598b7532dc117a397cb7fd_onEachFeature(feature, layer) {
 
             layer.on({
