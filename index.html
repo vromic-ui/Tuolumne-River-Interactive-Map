@@ -454,23 +454,20 @@
 
         
     
-            var tile_layer_bfb93097c03a3bee5a16daf34afde8f9 = L.tileLayer(
-                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+var tile_layer_bfb93097c03a3bee5a16daf34afde8f9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
-  "minZoom": 0,
-  "maxZoom": 20,
-  "maxNativeZoom": 20,
-  "noWrap": false,
-  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
-  "subdomains": "abcd",
-  "detectRetina": false,
-  "tms": false,
-  "opacity": 1,
-}
-
+                    "minZoom": 0,
+                    "maxZoom": 19,
+                    "maxNativeZoom": 19,
+                    "noWrap": false,
+                    "attribution": '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                    "detectRetina": false,
+                    "tms": false,
+                    "opacity": 1
+                }
             );
         
-    
             tile_layer_bfb93097c03a3bee5a16daf34afde8f9.addTo(map_c78fb8f91e7fb8448513495c550c72d4);
         
     
